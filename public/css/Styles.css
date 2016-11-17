@@ -1,0 +1,1269 @@
+/*Global styles*/
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    color: #999;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 180px;
+    /*background-color:#E8EAEF;*/
+    /*color:black;*/
+}
+
+/* must be same height as the footer */
+
+.top-dropdown-toggle {
+    color: #D8DDEF;
+}
+
+.btn-success {
+    background-color: #FF4A1C;
+    border-color: #FF4A1C;
+    opacity: 0.8;
+
+    transition: opacity .25s ease-in;
+    -moz-transition: opacity .25s ease-in;
+    -webkit-transition: opacity .25s ease-in;
+}
+
+.btn-success:hover {
+    background-color: #FF4A1C;
+    border-color: #FF4A1C;
+    opacity: 1;
+}
+
+a {
+    color: #D8DDEF;
+}
+
+a:hover {
+    color: #FF4A1C;
+    text-decoration: none;
+}
+
+.nav li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.display-none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.height-50 {
+    height: 50%;
+}
+
+.full-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url('../images/home-background.jpg');
+    background-size: cover;
+    background-position: 0 -150px;
+    z-index: -1;
+}
+
+.datepicker {
+    cursor: pointer;
+}
+
+.parsley-errors-list li {
+    margin-top: 7px;
+}
+
+.btn-full-width {
+    width: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.top-border-1 {
+    border-top: 1px solid #EEEEEE;
+}
+
+.bottom-border-1 {
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.right-border-1 {
+    border-right: 1px solid #EEEEEE;
+}
+
+.left-border-1 {
+    border-left: 1px solid #EEEEEE;
+}
+
+.side-borders-1 {
+    border-left: 1px solid #EEEEEE;
+}
+
+.padding-15 {
+    padding: 15px;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.no-side-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.padding-right-10 {
+    padding-right: 10px;
+}
+
+.padding-left-10 {
+    padding-left: 10px;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.padding-bottom-10 {
+    padding-bottom: 10px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.no-rounded-corners {
+    border-radius: 0px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+}
+
+:-ms-input-placeholder {
+    text-align: center;
+}
+
+body.modal-open {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.modal {
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    overflow-y: auto;
+    top: 25%;
+}
+
+.modal-lg {
+    top: 20%;
+}
+
+.modal-open {
+    overflow-y: auto;
+    border-radius: 0px;
+}
+
+.modal-content {
+    border-radius: 0px;
+}
+
+.modal-backdrop {
+    background-color: white;
+}
+
+#footer {
+    position: relative;
+    margin-top: -180px; /* negative value of footer height */
+    height: 180px;
+    clear: both;
+    background-color: #1c1d25;
+    padding-top: 23px;
+}
+
+.welcome {
+    width: 300px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.navbar {
+    /*font-weight: bold;*/
+}
+
+.navbar a, a:visited {
+    -o-transition: color .1s ease-out, background 2s ease-in;
+    -ms-transition: color .1s ease-out, background 2s ease-in;
+    -moz-transition: color .1s ease-out, background 2s ease-in;
+    -webkit-transition: color .1s ease-out, background 2s ease-in;
+    transition: color .2s ease-out, background 2s ease-in;
+}
+
+a {
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.nav ul li {
+    padding: 0px;
+}
+
+.nav ul li a {
+    margin: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.nav li {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-weight: bold;
+}
+
+.content-header {
+    background-color: #e5e5e5;
+    padding-left: 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+
+}
+
+#header-container {
+    background-color: #1C1D25;
+    height: 60px;
+}
+
+.top-navigation > li > a {
+    height: 60px;
+    line-height: 28px;
+}
+
+.content-header h1 {
+    height: 60px;
+    line-height: 60px;
+}
+
+.close {
+    color: white;
+    opacity: 1;
+    text-shadow: none;
+}
+
+.close:hover {
+    color: #FF4A1C;
+    opacity: 1;
+    text-shadow: none;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 16px 0 0 0;
+}
+
+.footer-bar {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.disabled-link {
+    cursor: pointer !important;
+}
+
+/*Login popup styles*/
+#error-message {
+    color: red;
+    display: none;
+    float: left;
+}
+
+#loginModal {
+    top: 25%;
+}
+
+#loginModal .close {
+    margin-bottom: 10px;
+}
+
+#login-button {
+    width: 100%;
+    background-color: #FF4A1C;
+    border-color: #FF4A1C;
+    opacity: 0.9;
+
+    transition: opacity .25s ease-in;
+    -moz-transition: opacity .25s ease-in;
+    -webkit-transition: opacity .25s ease-in;
+}
+
+#login-button:hover {
+    opacity: 1;
+}
+
+/*Personal profile styles*/
+#personal-profile-container {
+    margin-top: 16px;
+}
+
+.small-icon {
+    width: 30px;
+    height: 30px;
+}
+
+#profile-picture-big {
+    /*width: 150px;*/
+    /*height: 150px;*/
+    float: right;
+}
+
+.profile-picture-big {
+    width: 150px;
+    height: 150px;
+}
+
+.pic-container {
+    width: 150px;
+    height: 150px;
+}
+
+.pic-container img.wide {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.pic-container img.tall {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+}
+
+​
+.profile-picture-small {
+    width: 100px;
+    height: 100px;
+}
+
+#car-picture-big {
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+#university {
+    line-height: 30px;
+
+}
+
+#uni-label {
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.profile-bio {
+    width: 100%;
+    margin-top: 10px;
+    resize: none;
+    border-radius: 2px;
+}
+
+.personal-ratings-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#edit-profile-button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#edit-profile-profile-picture {
+    margin-left: 10px;
+}
+
+.edit-profile-column {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.edit-profile-column #edit-profile-button {
+    width: 100%;
+    border-radius: 0px;
+}
+
+.edit-university-input {
+    width: 227px;
+}
+
+.edit-university-label {
+    float: left;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+.edit-profile-page h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.edit-car-details-label {
+    text-align: center;
+    font-size: 20px;
+}
+
+#travel-stats {
+    margin-top: 20px;
+}
+
+#reviews-container {
+    margin-top: 20px;
+}
+
+/* Register page styles */
+#register-container {
+    margin-top: 30px;
+}
+
+#country-code {
+    width: 65px;
+}
+
+#phone-number {
+    width: 150px;
+}
+
+#bio {
+    height: 110px;
+}
+
+.terms-text {
+    font-size: 12px;
+}
+
+#email-field {
+    width: 140px;
+}
+
+.modal-text-left {
+    text-align: left;
+}
+
+/* Create Trip page styles */
+#seatsField {
+    width: 80px;
+}
+
+.active-tab {
+    background: #EEEEEE;
+}
+
+.steps-width-150px {
+    width: 190px;
+}
+
+.steps-height-55px {
+    height: 55px;
+}
+
+.trip_price_input_width {
+    width: 80px;
+}
+
+.car-picture-trip {
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+}
+
+.repeating-days-width {
+    width: 14.25%;
+}
+
+.background-color-red {
+    background-color: #FF6347;
+}
+
+#sign-for-trip-button {
+    height: 100px;
+}
+
+.empty-div-height-100 {
+    height: 100px;
+}
+
+.button-width-250 {
+    width: 250px !important;
+}
+
+.button-height-250 {
+    height: 250px !important;
+}
+
+.no-padding-top {
+    padding-top: 0px;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0px;
+}
+
+.margin-top-minus-10 {
+    margin-top: -10px;
+}
+
+.margin-left-minus-10 {
+    margin-left: -10px;
+}
+
+.margin-right-minus-10 {
+    margin-right: -10px;
+}
+
+.margin-left-10 {
+    margin-left: 10px;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0px;
+}
+
+.no-left-margin {
+    margin-left: 0px;
+}
+
+.no-right-margin {
+    margin-right: 0px;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.no-top-margin {
+    margin-top: 0px;
+}
+
+input[readonly].date-field {
+    cursor: pointer !important;
+    background-color: white !important;
+}
+
+/* Search bar styles */
+#search-bar-container {
+    background-color: #E8EAEF;
+}
+
+.resize-fit-element-100p {
+    width: 100%;
+    height: 100%;
+}
+
+/*Edit profile styles*/
+.crop {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.crop img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+}
+
+.edit-profile-actions {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.img150-150 {
+    width: 150px;
+    height: 150px;
+}
+
+.edit-profile-page input {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.edit-profile-page {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.edit-profile-page .img {
+    margin-top: 20px;
+}
+
+#addCarBlock {
+    display: block;
+}
+
+.edit-car-footer {
+    display: inline-block;
+    padding: 0px;
+    margin-top: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+    width: 100%;
+    padding: 15px 30px;
+
+}
+
+#addCarModal .modal-header h3 {
+    margin: 0;
+}
+
+#addCarModal .modal-body {
+    padding-top: 30px;
+}
+
+#addCarModal .modal-dialog {
+    margin-top: 150px;
+}
+
+#addCarButton {
+    display: block;
+    height: 35px;
+    width: 126px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.no-vehicles-note {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.no-vehicles-note p {
+    opacity: 0.3;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 30px;
+}
+
+.add-car-plus-icon {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+#editProfileModal .modal-body {
+    height: auto;
+}
+
+#editProfileModal .modal-footer {
+    margin-top: 27px;
+}
+
+.add-car-button-container {
+    margin-bottom: 10px;
+}
+
+.edit-years-input {
+    width: 120px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0px !important;
+
+    user-select: none;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+}
+
+.edit-university-input {
+    line-height: 30px;
+}
+
+#edit-university-label {
+    height: 36px;
+    vertical-align: middle;
+}
+
+/*Visit profile styles*/
+#visit-profile-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#editProfileModal .cars {
+    height: 413px;
+    overflow-y: auto;
+}
+
+.cars .car-details div {
+    padding-top: 10px;
+}
+
+/*Home page styles*/
+.home-splash-content {
+    height: 84vh;
+}
+
+.home-statistics-container {
+    clear: both;
+    display: block;
+    height: 75px;
+    background-color: #d8ddef;
+}
+
+.home-greeting-message {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.greeting-text {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-shadow: 0px 0px 6px rgba(150, 150, 150, 1);
+    font-size: 55px;
+}
+
+.home-search-container {
+    width: 100%;
+    height: 50%;
+}
+
+#home-search-date-field {
+    width: 150px;
+}
+
+#home-search-button {
+    width: 100px;
+}
+
+.home-current-trips-container {
+    background-color: white;
+}
+
+.home-current-trips-container h1 {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.home-search-container input {
+    width: 300px;
+    display: inline-block;
+    height: 50px;
+    text-align: center;
+}
+
+.home-search-container a {
+    width: 100px;
+    display: inline-block;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.search-text {
+    line-height: 35px;
+}
+
+.logo {
+    background-size: auto;
+    width: 80px;
+    height: 60px;
+}
+
+.logo-text {
+    background-size: auto;
+    width: 200px;
+    height: 50px;
+    margin-top: 8px;
+}
+
+/* Teaser styles */
+.teasers-list {
+    list-style: none;
+    height: 260px;
+}
+
+.teaser-element {
+    display: none;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.trips-teaser-container {
+    width: 100%;
+    height: 260px;
+    padding-top: 20px;
+}
+
+.loading-gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    vertical-align: middle;
+}
+
+#loginModal .loading-gif {
+    margin-top: 33%;
+}
+
+#loginModal .modal-body {
+    background-color: #1C1D25;
+}
+
+/*Trips list*/
+.trip-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+
+.text-minified {
+    font-size: 15px;
+}
+
+.city_route {
+    font-size: 20px;
+}
+
+.pagination-container {
+    height: 65px;
+}
+
+.trip-container {
+    margin-top: 10px;
+}
+
+.trips-list-car-pic {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.trips-list-driver-pic {
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+.trips-list-separator {
+    width: 58%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10px;
+    border-top: 1px solid orange;
+}
+
+.trip-list-route {
+    font-weight: bold;
+}
+
+.not-logged-details {
+    display: inline-block;
+}
+
+.trip-time {
+    font-size: large;
+}
+
+.trip-detail-font {
+    font-size: large;
+}
+
+.not-logged-in-notice {
+    margin-top: -4px;
+    float: left;
+    border-radius: 6px;
+    background-color: orange;
+    padding: 10px;
+    color: black;
+    display: none;
+}
+
+.disabled-popout {
+    margin-top: -4px;
+    float: left;
+    border-radius: 6px;
+    background-color: orange;
+    padding: 10px;
+    color: black;
+    display: none;
+}
+
+.disabled-btn {
+    cursor: pointer !important;
+}
+
+.loader-overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10000;
+    background-color: white;
+    opacity: 0.7;
+}
+
+/* Upoload */
+#upload-profile-file {
+    z-index: 1;
+}
+
+.uploadButton input[type="file"] {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+}
+
+#upload-profile-file:hover ~ #upload-profile-pic-btn {
+    text-decoration: underline;
+}
+
+#upload-profile-pic-btn {
+    z-index: -1;
+}
+
+/* Profile Dropdown menu */
+
+.profile-dropdown {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    width: 188px;
+    margin-right: -15px;
+    margin-top: -15px;
+    top: 58px;
+}
+
+.profile-dropdown a:hover {
+    background-color: black;
+}
+
+.first:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: 148px;
+    width: 7px;
+    height: 7px;
+    background: white;
+    border-right: 1px solid rgba(0, 0, 0, .15);
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotateZ(-135deg);
+}
+
+.profile-dropdown li a {
+    margin: 0px 0px 0px 0px !important;
+    padding: 10px 10px !important;
+    color: #cccccc !important;
+}
+
+.profile-dropdown li {
+    padding: 0px 0px 0px 0px !important;
+    border-left: 3px solid transparent;
+}
+
+.profile-dropdown li:hover {
+    border-left: 3px solid #FF4A1C;
+}
+
+.first:hover:after {
+    background: #f2f2f2;
+}
+
+.profile-menu-icon {
+    height: 16px;
+    width: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    float: right;
+}
+
+.feedback-icon {
+    background-image: url('../images/icons/dropdown_menu_icons.png');
+    background-position: -16px 0px;
+}
+
+.profile-dropdown li:hover .feedback-icon {
+    background-image: url('../images/icons/dropdown_menu_icons.png');
+    background-position: -16px -16px;
+}
+
+/***********************************************************************************************/
+.profile-icon {
+    background-image: url('../images/icons/dropdown/user.png');
+    background-size: cover;
+}
+
+.account-icon {
+    background-image: url('../images/icons/dropdown/cog.png');
+    background-size: cover;
+}
+
+.edit-icon {
+    background-image: url('../images/icons/dropdown/pencil.png');
+    background-size: cover;
+}
+
+.trips-icon {
+    background-image: url('../images/icons/dropdown/compass.png');
+    background-size: cover;
+}
+
+.logout-icon {
+    background-image: url('../images/icons/dropdown/exit.png');
+    background-size: cover;
+}
+
+.profile-item.account:hover .account-icon {
+    background-image: url('../images/icons/dropdown/cog-hover.png');
+}
+
+.profile-item.profile:hover .profile-icon {
+    background-image: url('../images/icons/dropdown/user-hover.png');
+}
+
+.profile-item.edit:hover .edit-icon {
+    background-image: url('../images/icons/dropdown/pencil-hover.png');
+}
+
+.profile-item.trips:hover .trips-icon {
+    background-image: url('../images/icons/dropdown/compass-hover.png');
+}
+
+.profile-item.logout:hover .logout-icon {
+    background-image: url('../images/icons/dropdown/exit-hover.png');
+}
+
+/*******************************************************************************************************8*/
+.change-profile-icon {
+    background-image: url('../images/icons/dropdown_menu_icons.png');
+    background-position: -48px 0px;
+}
+
+.profile-dropdown li:hover .change-profile-icon {
+    background-position: -48px -16px;
+}
+
+.profile-dropdown li:hover a {
+    color: #666666 !important;
+}
+
+.profile-dropdown-icon {
+    float: right;
+    margin-right: 8px;
+}
+
+.profile-item {
+    font-size: 11pt;
+}
+
+.profile-item:hover {
+    background-color: #f2f2f2 !important;
+}
+
+.profile-item a:hover {
+    background: none !important;
+}
+
+.ApplicationMenu .AddOns {
+    width: 46px;
+    height: 43px;
+    /*background-color:yellow;*/
+}
+
+.arrow-down {
+    width: 0;
+    margin-top: 8px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #FF4A1C;
+    float: right;
+    margin-left: 10px;
+}
+
+.profile-names {
+    padding-left: 5px;
+    padding-right: 5px;
+    float: left;
+}
+
+.dropdown-toggle {
+    float: right;
+    display: inline-block;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.dropdown {
+    vertical-align: middle;
+    display: block;
+    position: relative;
+    margin-top: 19px;
+}
+
+.dropdown-toggle:hover {
+    cursor: pointer;
+}
+
+/*Gmaps styles*/
+#map {
+    height: 300px;
+    /*width:500px;*/
+    margin: 0;
+}
+
+#map.map-large {
+    height: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#autocomplete {
+    width: 150px;
+    height: 25px;
+}
+
+.car-make-and-model input {
+    /*margin-top: 10px;*/
+    margin-bottom: 10px;
+}
+
+.car-details-container h2 {
+    margin: 0;
+    margin-right: 10px;
+
+}
+
+.delete-vehicle-button {
+    margin-top: 22px;
+}
+
+/*Media queries*/
+
+@media only screen and (max-width: 800px) {
+
+    .greeting-text {
+        font-size: 30px;
+    }
+
+}
+
+/*Opera Fix*/
+body:before {
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+}
+
+.input-group-addon {
+    background-color: white;
+
+}
+
+/* Some fuckin weird fix for rounded corners elements with add-ons before them... */
+.input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child) {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.calendar-icon {
+    width: 15px;
+    height: 15px;
+    background-image: url('../images/icons/calendar.png');
+    background-size: cover;
+}
